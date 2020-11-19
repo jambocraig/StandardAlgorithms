@@ -11,9 +11,10 @@ import java.util.Arrays;
 public class SortTesterJan19 {
 
     public static void main(String[] args) {
+        //sorting comparison
         long start, stop;
         double duration;
-        final int SIZE = 250_000;
+        final int SIZE = 25_000;
         int[] arr = new int[SIZE];
         int[] arr2 = new int[SIZE];
         int[] arr3 = new int[SIZE];
