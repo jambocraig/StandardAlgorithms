@@ -7,7 +7,7 @@ import static SortingAlgorithms.InsertionStageFinal.insertion;
 import java.util.ArrayList;
 import java.util.Collections;
 import static sorting.MergeSort2.mergeSort;
-import static sorting.QuickSortDemo.quickSort;
+import static Sorting.QuickSortDemo.quickSort;
 
 /**
  *
