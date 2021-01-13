@@ -51,7 +51,7 @@ public class RecapAtApril19 {
         }
     }
 
-    private static void binSort(int[] arr, int SIZE) {
+    private static void bubbleSort(int[] arr, int SIZE) {
         int temp;
         Boolean flag;
         for (int i = 0; i < SIZE; i++) {
