@@ -70,7 +70,6 @@ public class SortingBubbleInsertionDemo {
             if (!swapped) {
                 break;
             }
-            swapped = false;
         }
     }
 
