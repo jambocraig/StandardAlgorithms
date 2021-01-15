@@ -26,7 +26,7 @@ public class SortingDemo_13Jan2021 {
         double total;
         double average;
         int subtests;
-        for (int size = 1_000; size < 500_000; size += 500) {
+        for (int size = 10_000; size <= 500_000; size += 10_000) {
             total = 0;
             subtests = 10;
             for (int i = 0; i < subtests; i++) {
@@ -50,6 +50,7 @@ public class SortingDemo_13Jan2021 {
                 //printList(nums);
             }
             average = total/subtests;
+            System.out.println(size + "," + average + "\n");
             bw.write(size + "," + average + "\n");
         }
 
@@ -94,7 +95,6 @@ public class SortingDemo_13Jan2021 {
             if (!swapped) {
                 break;
             }
-            swapped = false;
         }
     }
 }
