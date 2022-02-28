@@ -1,7 +1,6 @@
 package MergeSort;
 
 /**
- *
  * @author cmurray
  */
 public class MergeSort {
@@ -14,12 +13,9 @@ public class MergeSort {
         int[] l = new int[mid];
         int[] r = new int[n - mid];
 
-        for (int i = 0; i < mid; i++) {
-            l[i] = a[i];
-        }
-        for (int i = mid; i < n; i++) {
-            r[i - mid] = a[i];
-        }
+        System.arraycopy(a, 0, l, 0, mid);
+        System.arraycopy(a, mid, r, 0, n - mid);
+
         mergeSort(l, mid);
         mergeSort(r, n - mid);
 

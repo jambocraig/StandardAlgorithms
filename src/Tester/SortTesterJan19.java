@@ -14,7 +14,7 @@ public class SortTesterJan19 {
         //sorting comparison
         long start, stop;
         double duration;
-        final int SIZE = 25_000;
+        final int SIZE = 200_000;
         int[] arr = new int[SIZE];
         int[] arr2 = new int[SIZE];
         int[] arr3 = new int[SIZE];
@@ -24,7 +24,7 @@ public class SortTesterJan19 {
         Random rn = new Random();
         int value;
         for (int i = 0; i < SIZE; i++) {
-            value = rn.nextInt(1_000);
+            value = rn.nextInt(SIZE);
             arr[i] = value;
             arr2[i] = value;
             arr3[i] = value;

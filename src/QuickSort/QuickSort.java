@@ -1,7 +1,6 @@
 package QuickSort;
 
 /**
- *
  * @author cmurray
  */
 public class QuickSort {
@@ -10,12 +9,13 @@ public class QuickSort {
         int length = values.length;
 
         if (length == 0) {
-            return;        }
+            return;
+        }
 
         quicksort(values, 0, length);
     }
 
-    public static int partition(int arr[], int left, int right) {
+    public static int partition(int[] arr, int left, int right) {
         int i = left + 1;
 
         int pivot = arr[left];
@@ -31,7 +31,7 @@ public class QuickSort {
         return i;
     }
 
-    public static void quicksort(int arr[], int left, int right) {
+    public static void quicksort(int[] arr, int left, int right) {
         int index = partition(arr, left, right);
         if (left < index - 1) {
             quicksort(arr, left, index - 1);
@@ -48,5 +48,4 @@ public class QuickSort {
         arr[i] = arr[j];
         arr[j] = tmp;
     }
-
 }
